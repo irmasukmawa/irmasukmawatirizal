@@ -1,0 +1,71 @@
+<html>
+<title>Pariwisata Ciwidey</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+</div>
+<img src="bg.png" style=" width: 100%; height: 210;">
+<div class="w3-bar w3-blue">
+    <button class="w3-bar-item w3-button" onclick="openKota('top')">Home</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('bottom')">Situ Patenggang</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('left')">Walini</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('right')">Kawah Putih</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('opacity')">Glamping Lakeside Ciwidey</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('zoom')">about me</button>
+   </div>
+   <div id="top" class="w3-container kota w3-animate-top" style="display:none">
+    <center>
+        <h1>SELAMAT DATANG DI PARIWISATA CIWDEY </h1>
+        <h3>Selamat Menikmati Liburan Anda Bersama Keluarga </h3>
+        <img src="kebunteh.jpg" style="width: 50%;">
+    </div>
+    <div id="bottom" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center>
+        <h2>SITU PATENGGANG</h2>
+        <hr>
+        <img src="situ.jpg" style="width: 30%;">
+        <p>Situ Patenggang atau Situ Patengan adalah suatu danau yang terletak di kawasan objek wisata alam Bandung Selatan, Jawa Barat, Indonesia, tepatnya di Ciwidey. Terletak di ketinggian 1600 meter di atas permukaan laut, danau ini memiliki pemandangan yang sangat eksotik. Situ patenggang juga memiliki pemandangan alam yang asri, karena disekitarnya terdapat hamparan kebun teh.</p>
+    </div>
+    <div id="left" class="w3-container kota w3-animate-left" style="display:none">
+        <center>
+        <h2>PEMANDIAN KOLAM AIR PANAS WALINI</h2>
+        <hr>
+        <br>
+        <img src="walini.jpg" style="width: 30%;">
+        <p>Walini adalah Kolam air panas Walini Ciwalini di tengah kebun teh Rancabali Ciwidey Bandung Selatan, dengan sumber air  panas pegunungan Patuha yang ditampung dan diolah pada bak khusus, serta kolam yang dikuras secara teratur menjamin kualitas air panas alami yang bening, bersih, aman bagi kesehatan dan dapat menghilangkan stress.</p>
+    </div>
+    <div id="right" class="w3-container kota w3-animate-right" style="display:none">
+        <center>
+        <h2>KAWAH PUTIH</h2>
+        <hr><br>
+        <img src="kawahputih.jpg" style="width: 30%;">
+        <p>Kawah putih merupakan sebuah danau yang terbentuk dari letusan Gunung Patuha. Tanah yang bercampur belerang di sekitar kawah ini berwarna putih, lalu warna air yang berada di kawah ini berwarna putih kehijauan, yang unik dari kawah ini adalah airnya kadang berubah warna. Danau Kawah Putih sendiri berada pada ketinggian 2194 m tapi luas total Danau Kawah Putih 25 ha yang dipakai wisata 5 ha dan lokasi kawah sendiri.
+            Perairannya yang berwarna biru kristal berubah dengan kondisi cuaca, dan dilapisi dengan pasir putih halus, memberikan pengunjung pengalaman dunia lain.
+        </p>
+    </div>
+    <div id="opacity" class="w3-container kota w3-animate-opacity" style="display:none">
+        <center>
+        <h2>GLAMPING LAKESIDE</h2>
+        <hr><br>
+        <img src="glamping.jpg" style="width: 30%;">
+        <p>Glamping Lakeside merupakan sebuah kawasan berkonsep resort wisata di Ciwidey terbaru dan bisa dikarakan sangat lengkap dengan aneka fasilitas dan juga paket kegiatan wisata modern berbasis alam di dalamnya. Objek wisata di Ciwidey ini bisa jadi mulai dikenal oleh umum pasca soft opening salah satu fasilitas restonya tanggal 7 Juli 2016 yang lalu. Masih sangat baru, namun melihat daya tarik wisatanya, lokasi wisata ini diprediksi akan menjadi destinasi wisata baru yang sangat rekomended untuk dikunjungi.</p>
+    </div>
+    <div id="zoom" class="w3-container kota w3-animate-zoom" style="display:none">
+        <center>
+        <h2>NAMA : IRMA SUKMAWATI RIZAL</h2>
+        <h2>NIM  : 10122043</h2>
+        <h2>KELAS : IF-2 </h2>
+    </div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
